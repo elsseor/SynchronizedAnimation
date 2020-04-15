@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href=".source/main.css" />
+  <title>SynchronizedAnimation</title>	
+</head>
+<body>
+		<!-- Dieses Formular nimmt die Eingaben des Users entgegen, wie die Anzhal der PCs usw.  -->
+		
+		<form name="form1" method="post" action="php/linkcreator.php">
+			<label>Anzahl der PCs:
+				<select name="anzahl">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select> </label>
+			<br>
+
+			Bezeichnung:
+			<input type="text" name="bezeichnung" size="10" maxlength="50">
+			<br>
+			<input type="hidden" name="datum" value="<?php echo date('Y-m-d H:i:s'); ?>">
+			<br>
+			<input type="submit" name="go" value="Daten senden">
+		</form>
+
+
+	</body>
+</html>

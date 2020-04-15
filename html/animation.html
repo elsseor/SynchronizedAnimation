@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/animation.css">
+		<script src="../js/nbs.js"></script>
+		<script type="text/javascript">
+			var localTime = new Date();
+			var st = srvTime();
+			var date = new Date(st);
+			var serverOffset = new Date(st) - localTime;
+			setInterval(myTime, 1000);
+
+		</script>
+	</head>
+
+	<body>
+
+		<h1>Animation</h1>
+		
+		<!-- Timestamp zur Kontrolle ausgeben, sollte in endgültiger Version entfernt werden -->
+		<div id="displayTime"></div>
+
+		<div id="circle"></div>
+
+	</body>
+</html>
